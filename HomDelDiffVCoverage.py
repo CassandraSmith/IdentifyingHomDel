@@ -210,7 +210,7 @@ for partNo in randParts:
 		samMed = float(varDict[randSample][0])
 		samDiff = float(varDict[randSample][1])
 
-		# CHANGE TO RANDOM SCORE CALCULATED FROM <10% AVERAGE COVERAGE
+		# CHANGE TO RANDOM SCORE CALCULATED FROM <10% AVERAGE COVERAGE OVER THE INTERVAL
 		avgCov = NGSStats.mean(NGS3covList)
 		change = (float(random.uniform(0,10)))/100
 		NGS3covList[spikePos] = avgCov * change
